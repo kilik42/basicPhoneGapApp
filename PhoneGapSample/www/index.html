@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme.css" />
+    <title>First Aid Comics</title>
+</head>
+
+<body>
+    <div class="app">
+
+      <!-- home -->
+            <div data-role="page" id="home">
+                  <header data-role="header">
+                        <h1>First Aid Comics</h1>
+                  </header>
+
+                  <div data-role="content">
+
+                    <nav data-role="navbar">
+
+                      <ul>
+                        <li><a href="#home" class = "ui-btn-active">home</a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#contact">contact</a></li>
+                      </ul>
+
+                    </nav>
+                      <!-- this is the content -->
+                      <br>
+
+                      <img class="banner"src="img/firstaidcomics-insure004.jpg" alt="">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In quidem quis, accusamus veritatis voluptatum et. Vero, quas perferendis sequi autem vitae distinctio ratione, temporibus, mollitia quidem, perspiciatis deleniti. Eveniet, sint.</p>
+                      <a href="#contact" class="ui-shadow ui-btn ui-corner-all">contact us today!</a>
+                  </div>
+
+                  <footer data-role="footer">
+                    <h3>copyright &copy;2009</h3>
+
+                  </footer>
+            </div>
+
+
+      <!-- about page -->
+            <div data-role="page" id="about">
+                  <header data-role="header">
+                        <h1>First Aid Comics </h1>
+                  </header>
+
+                  <div data-role="content">
+                    <nav data-role="navbar">
+
+                      <ul>
+                        <li><a href="#home" >home</a></li>
+                        <li><a href="#about" class = "ui-btn-active">about</a></li>
+                        <li><a href="#contact">contact</a></li>
+                      </ul>
+
+                    </nav>
+                      <!-- about content -->
+
+                      <h3 style = "text-align: center">about us</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum temporibus repellendus nesciunt optio iure unde, deleniti obcaecati eaque, ad. Dolorum perferendis, repellat adipisci tenetur error omnis ullam, earum quidem nemo?</p>
+                  </div>
+
+                  <footer data-role="footer">
+                    <h3>copyright &copy; 2009</h3>
+
+                  </footer>
+            </div>
+
+      <!-- contact page -->
+            <div data-role="page" id="contact">
+                  <header data-role="header">
+                        <h1>First Aid Comics </h1>
+                  </header>
+
+                  <div data-role="content">
+                    <nav data-role="navbar">
+
+                      <ul>
+                        <li><a href="#home" >home</a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#contact" class = "ui-btn-active">contact</a></li>
+                      </ul>
+
+                    </nav>
+                      <!-- about content -->
+                      <h3 style="text-align:center">Contact us!</h3>
+                      <div class="map">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5952.051965847331!2d-87.57257589999999!3d41.763097599999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x53084744f4309cf7!2sFirst+Aid+Comics!5e0!3m2!1sen!2sus!4v1463097868071" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                      </div>
+
+                      <h3 style="text-align:center">Location</h3>
+
+                      <ul>
+                        <li class="ui-btn ui-icon-home ui-btn-icon-left ui-shadow ui-corner-all"><strong>First Aid Comics</strong></li>
+                        <li class="ui-btn ui-icon-location ui-btn-icon-left ui-shadow ui-corner-all">1617 E 55th St, Chicago, IL 60615</li>
+                        <li class="ui-btn ui-icon-mail ui-btn-icon-left ui-shadow ui-corner-all">firstaidcomics.com</li>
+                        <li class="ui-btn ui-icon-phone ui-btn-icon-left ui-shadow ui-corner-all">(773) 752-6642</li>
+
+                      </ul>
+                  </div>
+
+                  <footer data-role="footer">
+                    <h3>copyright &copy; 2009</h3>
+
+                  </footer>
+            </div>
+
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+
+</html>
